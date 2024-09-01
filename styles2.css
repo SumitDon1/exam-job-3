@@ -1,0 +1,529 @@
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-need-jobs {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-need-jobs:hover {
+    background-color: #ff2e00;
+    transform: scale(1.1);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden;
+    color: #333;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; 
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #28a745; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 2px solid #28a745; 
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+    border-color: #1e7e34; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1e7e34; 
+    box-shadow: 0 6px 10px rgba(30, 126, 52, 0.5);
+}
+
+#jobList {
+    margin-top: 20px;
+}
+
+.job-item {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.job-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.job-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.job-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.find-more-exams-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.find-more-exams-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 86, 179, 0.5);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .find-more-exams-button {
+        top: 15px;
+        right: 15px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow: hidden;
+    color: #333;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; 
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #28a745; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+select:hover, select:focus {
+    border-color: #1e7e34; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(40, 167, 69, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1e7e34;
+    box-shadow: 0 6px 10px rgba(30, 126, 52, 0.5);
+}
+
+#jobList {
+    margin-top: 20px;
+}
+
+.job-item {
+    background-color: white;
+    margin: 15px 0;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1.1rem; 
+    max-width: 600px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.job-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.job-item h3 {
+    font-size: 1.7rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-item p {
+    font-size: 1.1rem; 
+    color: #555;
+    margin: 8px 0;
+}
+
+.find-more-exams-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.find-more-exams-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 10px rgba(0, 86, 179, 0.5);
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    select {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .find-more-exams-button {
+        top: 15px;
+        right: 15px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .job-item {
+        padding: 18px; 
+        max-width: 100%; 
+        font-size: 1rem;
+    }
+}
+
+.career-popup {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.5);
+    cursor: pointer;
+    z-index: 3;
+    animation: pulse 2s infinite;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-text {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #f0f8ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: text-flicker 1.5s infinite alternate; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 12px 24px rgba(0, 123, 255, 0.6), 0 0 30px rgba(0, 212, 255, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.5);
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.career-popup:hover {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0, 86, 179, 0.7), 0 0 40px rgba(0, 212, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .career-popup {
+        width: 130px;
+        height: 130px;
+        font-size: 1rem;
+        top: 20px;
+        left: 20px;
+    }
+    
+    .career-text {
+        font-size: 1.2rem; 
+    }
+}
+
+/* Ensure body handles overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    overflow-y: auto; /* Ensures vertical scrollbars appear when content overflows */
+}
+
+/* Main Content Styling */
+.container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    z-index: 1;
+    max-height: 100vh; /* Ensures container does not exceed viewport height */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+/* Adjust container styles if using full viewport height */
+.full-screen-container {
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Ensure other elements do not overflow */
+#examList, #jobList {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    overflow-y: auto; /* Allows scrolling if list items overflow */
+}
+
+/* Optional - Adjust styles for large lists or content */
+.exam-item, .job-item {
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+    /* If you need specific styling adjustments */
+}

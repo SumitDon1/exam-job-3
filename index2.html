@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Job</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+
+    <a href="index.html" class="btn-need-jobs" target="_blank">EXAM ELIGIBILITY?</a>
+
+
+    <video autoplay muted loop id="background-video">
+        <source src="video4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Career Align Popup -->
+    <div class="career-popup">
+        <span class="career-text">Career Align</span>
+    </div>
+
+
+
+
+    <div class="content-container d-flex justify-content-center align-items-center">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="card-title text-center">Find Your Best Job Opportunity</h2>
+                <p class="text-center text-muted">Select your highest qualification to see available job opportunities.
+                </p>
+
+                <div class="form-group">
+                    <label for="job-qualification">Highest Qualification:</label>
+                    <select id="job-qualification" class="form-control" onchange="fetchJobs()">
+                        <option value="">--Select--</option>
+                        <option value="10th">10th Pass</option>
+                        <option value="11th">11th Pass</option>
+                        <option value="12th">12th Pass</option>
+                        <option value="bsc">B.Sc. Pass</option>
+                        <option value="msc">M.Sc. Pass</option>
+                        <option value="btech">B.Tech Pass</option>
+                        <option value="mtech">M.Tech Pass</option>
+                        <option value="phd">PhD Scholar</option>
+                    </select>
+                </div>
+
+                <div id="jobList" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>
